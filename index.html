@@ -2,50 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Fresh Juice Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juice Brand</title>
 
     <style>
-        /* Reset default margin */
         body {
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            min-height: 100vh;
         }
 
-        /* Container */
-        .logo-container {
+        .container {
             text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 500px;
         }
 
         /* Passport size logo */
-        .logo-container img {
-            width: 140px;   /* Passport width */
-            height: 180px;  /* Passport height */
+        .logo img {
+            width: 140px;
+            height: 180px;
             object-fit: contain;
-            border-radius: 6px;
+            border-radius: 8px;
         }
 
-        /* Optional brand text */
-        .brand-name {
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #222;
+        h1 {
+            margin-top: 15px;
+            color: #111;
+        }
+
+        .description {
+            margin-top: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .shop-info {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f1f3f5;
+            border-radius: 10px;
+        }
+
+        .shop-info h2 {
+            margin-bottom: 10px;
+            color: #d00000;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #d00000;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #a00000;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="logo-container">
-        <img src="logo.png" alt="Juice Logo">
-        <div class="brand-name">Fresh Juice</div>
+<div class="container">
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="logo.png" alt="Juice Shop Logo">
     </div>
+
+    <h1>Fresh Juice Shop</h1>
+
+    <!-- Logo Description -->
+    <div class="description">
+        <p>
+            Our logo represents freshness, health, and natural energy. 
+            The vibrant red juice inside the glass symbolizes pure fruit 
+            goodness, while the green leaves highlight our commitment to 
+            organic and fresh ingredients.
+        </p>
+    </div>
+
+    <!-- Shop Description -->
+    <div class="shop-info">
+        <h2>About Our Shop</h2>
+        <p>
+            Welcome to Fresh Juice Shop! We serve freshly prepared juices 
+            made from seasonal fruits. Our mission is to provide healthy, 
+            refreshing, and affordable drinks for everyone.
+        </p>
+        <a href="#" class="btn">Visit Our Shop</a>
+    </div>
+
+</div>
 
 </body>
 </html>
